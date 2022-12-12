@@ -1,0 +1,138 @@
+html {
+    font-size: 6.25%;
+}
+
+body {
+    font-size: 16rem;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    background-color: #f1f5f8;
+}
+
+/*General*/
+h1,
+h4 {
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    color: #102A42;
+    letter-spacing: 0.15em;
+}
+
+h1 {
+    font-size: 32rem;
+}
+
+h4 {
+    font-size: 14rem;
+}
+
+p {
+    font-size: 14rem;
+    color: #617D98;
+}
+
+img {
+    display: block;
+}
+
+button {
+    font-size: 16rem;
+    text-transform: capitalize;
+    letter-spacing: 0.2em;
+}
+
+
+/*header*/
+header {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 3em 0;
+}
+
+
+/*main*/
+.main-pic {
+    width: 90%;
+    margin: 0 auto;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 1em;
+    margin-bottom: 2em;
+}
+
+
+/*main- tabs section*/
+.tabs-container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.btns-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-top-right-radius: 0.5em;
+    
+}
+
+.toggle-btn {
+    padding: 1em 0;
+    border: none;
+    background-color: #DAE2EC;
+    transition: all 0.3s linear;
+}
+
+.toggle-btn:hover,
+.toggle-btn:focus {
+    background-color: #fff;
+    color: #8bcbf9;
+    cursor: pointer;
+}
+
+
+.active-btn {
+    background-color: #fff;
+}
+
+.active-btn:hover {
+    color: #000;
+}
+
+
+.content-div {
+    padding: 1em;
+}
+
+
+
+/*Bigger screen setup*/
+@media (min-width: 800px) {
+    h1 {
+        font-size: 40rem;
+    }
+
+    h4,
+    p,
+    button {
+        font-size: 16rem;
+    }
+
+}
+
+@media (min-width: 992px) {
+    main {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        box-sizing: border-box;
+        max-width: 1150px;
+    }
+    .main-pic {
+        margin-right: 1em;
+        margin-bottom: 0;
+    }
+
+}
